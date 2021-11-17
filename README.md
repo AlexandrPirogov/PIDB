@@ -35,18 +35,28 @@ ___
    - Compiler - АТД с методами set(query), getPlan(). Забирает запрос и отдаёт план запроса 
    - Logger - АТД с методами log(). Записывает логи в...
    - ExecMachine - АТД, с методами execute(plan), create(Table, Row), delete(Table, Row), read(Table, Row), update(Table, Row)
+  
    - Table - АТД, с методами read(row). Хранит в себе кортежи. 
    - CRUDTable - АТД,с методами read(row), create(row), delete(row), update(row)
    - View - АТД, с методами read(row).
+
    - Row - АТД, с методами read(column).Считывает значение определенного поля
+   - CRUDRow - АТД, с методами read(column), update(column), delete(column), set(column).
+
+   - Column - АТД, с методами set(value), getValue(). Хранит значение
+
    - Parser - АТД, с методами parse(query).
    - ParserDDL - АТД, с методами parse(query).
    - ParserQuery - АТД, с мтеодами parse(query).
+   
    - BufferManager - АТД, с методами alloc(),  
-   - DiskHandler - АТД, с методом getSize(), getFreeSize(), Alloc(). Аналог вторичного устройства. Изучить принципы хранения информации.
+   - DiskHandler - АТД, с методом getSize(), getFreeSize(), Alloc(). Аналог вторичного устройства (носителя данных). Изучить принципы хранения информации.
+   - DiskManager - АТД, с методами readDisk(Disk), getLocation().
+
+   - TransactionManager - ...
    - Transaction - АТД, с методами notifyStart(), notifyEnd() 
    - Console - АТД, с методами read(), exec()
-   
+   - 
 ----------------------------------
 
    1. Console -> Вводят команду (запрос) в консоль. Консоль считывает и выполняет команду.
