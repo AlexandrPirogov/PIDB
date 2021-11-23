@@ -6,10 +6,11 @@ ATDs:
 
 ```
 Columns:
-   Value;
+   T Value;
    commands:
-      
+     setValue(value); 
    queries:
+      getValue(value);
 ```
 -------------------
 ```
