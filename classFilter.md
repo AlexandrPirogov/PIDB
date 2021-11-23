@@ -57,6 +57,7 @@ ViewTable extends Table:
 ----------
 ```
 Parser:
+   GrammarTree tree;
    commands:
       parseQuery(Query);
    queries:
@@ -66,6 +67,8 @@ Parser:
 
 ```
 Compiler:
+   SyntaxParser syntaxParser;
+   SemanticParser semanticParser;
    commands:
       compilerQuery(Query);
    queries:
@@ -81,6 +84,7 @@ ParserDDL extends Parser
 
 ``` 
 Transaction:
+   Command commands[]
    commands:
       
    queries:
@@ -93,7 +97,7 @@ TransactionManager:
    Logger log;
    Transation transactions;
    commands:
-      executeTransaction();
+      ???
       //rollback();
    queries:
       get_exec_status();
@@ -111,8 +115,18 @@ Logger:
 ```
 --------------
 
+```
+ExecuteMachine:
+   commands:
+      executeTransactino(transaction);
+   queries:
+      get_exec_status();
+```
+
 ------------------
 
+
+TODO : Доделать...
 
 
 
