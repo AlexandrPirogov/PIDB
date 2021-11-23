@@ -37,17 +37,17 @@ ___
    - ExecMachine - АТД, с методами execute(plan), create(Table, Row), delete(Table, Row), read(Table, Row), update(Table, Row)
   
    - Table - АТД, с методами read(row). Хранит в себе кортежи. 
-   - CRUDTable - АТД,с методами read(row), create(row), delete(row), update(row)
+   - ~~ CRUDTable - АТД,с методами read(row), create(row), delete(row), update(row) ~~ `upd 21-11-23`
    - View - АТД, с методами read(row).
 
    - Row - АТД, с методами read(column).Считывает значение определенного поля
-   - CRUDRow - АТД, с методами read(column), update(column), delete(column), set(column).
+   - ~~ CRUDRow - АТД, с методами read(column), update(column), delete(column), set(column). ~~ `upd 21-11-23`
 
    - Column - АТД, с методами set(value), getValue(). Хранит значение
 
    - Parser - АТД, с методами parse(query).
-   - ParserDDL - АТД, с методами parse(query).
-   - ParserQuery - АТД, с мтеодами parse(query).
+ - ~~ ParserDDL - АТД, с методами parse(query). ~~ `upd 21-11-23`
+ - ~~ ParserQuery - АТД, с мтеодами parse(query). ~~ `upd 21-11-23`
    
    - BufferManager - АТД, с методами alloc(),  
    - DiskHandler - АТД, с методом getSize(), getFreeSize(), Alloc(). Аналог вторичного устройства (носителя данных). Изучить принципы хранения информации.
