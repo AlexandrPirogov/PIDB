@@ -6,10 +6,13 @@
 1. ```
    Console:
       fields:
-         
-      commands: 
-         
+         string command;   
+      commands:
+         //Pre-condtion: none
+         //Post-condition: Console contains new commands and sends it to Compilers
+         readCommand(command);
       queries:
+         get_readCommand_status();
          
    ```
 2. ```
@@ -20,7 +23,9 @@
          const int statuses = 0;
          string plan;
       commands:
-         compile(query)
+         //Pre-condition: 
+         //Post-condition: Compile create a plan
+         compile(query);
       queries:
          getPlan();
          get_compile_status();
@@ -32,7 +37,9 @@
        Tree tree;
        String query;
        commands:
-          parse();
+          //Pre-condition: given a string
+          //Post-condition: success or failed parsing's results;
+          parse(Query);
        queries:
           get_parse_status();
    ```
@@ -45,6 +52,8 @@
    ExecuteMachine:
        fields:
        commands:
+          //Pre-condition: given an plan
+          //Post-condition: executed Transaction/Commands
           exec(plan);
        queries:
           getExecPlan();
@@ -56,6 +65,8 @@
          Logger log:
         // Recover recover;
       commands:
+         //Pre-condition:
+         //Pos-condition: logged databases' action
          log();
         // recover();
       queries:
@@ -67,12 +78,15 @@
    Logger:
       fields:
       commands:
+         //Pre-condition:
+         //Post-condition: Логи записаны в файл??
          log();
       queries:
          get_log_status();
    ``` 
 
 7. ```
+   //Подумать ещё над менеджером ресурсов
    ResourceManager:
       fields:
          FileHandler fileHandler;
@@ -83,6 +97,7 @@
    ```
 
 7. ```
+   //Подумать ещё над Менеджером файлов
    FileHandler:
       fields:
       commands:
@@ -100,9 +115,11 @@
       fields:
          String name;
          Row rows[];
-         Row currentRow;
+         ResultTable resultTable;
       commands:
-         readRow(Row);
+         //Pre-condition:
+         //Post-condition: currentRow принимает значения соответсвующие строки
+         readRow(expression);
       queries:
          getCurrentRow();
          get_readRow_status();
@@ -111,15 +128,26 @@
    TableCRUD : Table
       fields:
       commands:
-         createRow(Row);
-         updateRow(Row);
+         //Pre-condition:
+         //Post-condition: добавляем строку в таблицу
+         createRow();
+         //Pre-condition: дано выражение
+         //Post-condition: обновляет строку в таблицу
+         updateRow(expression-lambda);
+         //Pre-condition: дано выражение
+         //Post-condition: удаляет соответсвующие строки из таблицы
          deleteRow(Row);
       queries:
          get_createRow_status();
          get_updateRow_status();
          get_deleteRow_status();
    ```
-
+   ```
+   ResultTable : Table
+       commands:
+          insertRow();
+       queries:
+          get_insertRow_status();
    ```
    View : Table
    ```
@@ -127,9 +155,11 @@
 9. ```
    Row:
      fields:
-       T value;
+       T value[];
      commands:
-        setValue();
+        //Pre-condition: дано значение
+        //Post-condition: Строка устанавливает значения соответсвующие
+        setValue(value);
      queries:
         getValue();
         get_setValue_status();
@@ -140,9 +170,15 @@
           string name;
           Table tables[];
        commands:
-          createTable(Table);
-          dropTable(Table);
-          alterTable(Table);
+          //Pre-condition:Дано название таблицы
+          //Post-condition: В схему добавлена таблица
+          createTable(String Table); 
+          //Pre-condition: Дано название таблицы (желательно существующей)
+          //Post-condition: Таблица удалена из схемы
+          dropTable(String Table);
+          //Pre-condition: Дано название существующей таблицы
+          //Post-condition: Соответствующая таблица в схеме изменена
+          alterTable(String Table);
        queries:
            get_create_status();
            get_drop_status();
@@ -153,8 +189,14 @@
         fields:
            Node node;
         commands:
-           addNode();
-           deleteNode();
+           //Pre-condition: Дана нода
+           //Post-condition: Добавлена новая нода
+           addNode(Node);
+           //Pre-condition: Дана нода для удаления
+           //Post-condition: Удалена нода из дерева
+           deleteNode(Node);
+           //Pre-condition:
+           //Post-condition: ставит статус об успешном парсинге.
            travel();
         queries:
            get_add_status();
