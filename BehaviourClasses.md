@@ -135,35 +135,36 @@
         get_setValue_status();
    ```
 10. ```
-   Scheme:
-      fields:
-         string name;
-         Table tables[];
-      commands:
-         createTable(Table);
-         dropTable(Table);
-         alterTable(Table);
-      queries:
-          get_create_status();
-          get_drop_status();
-          get_alter_status();
-    ```
-11. ```
-    Tree:
+    Scheme:
        fields:
-          Node node;
+          string name;
+          Table tables[];
        commands:
-          addNode();
-          deleteNode();
-          travel();
+          createTable(Table);
+          dropTable(Table);
+          alterTable(Table);
        queries:
-          get_add_status();
-          get_delete_status();
-          get_travel_status();
+           get_create_status();
+           get_drop_status();
+           get_alter_status();
+     ```
+11.  ```
+     Tree:
+        fields:
+           Node node;
+        commands:
+           addNode();
+           deleteNode();
+           travel();
+        queries:
+           get_add_status();
+           get_delete_status();
+           get_travel_status();
+    ```
     ```
     SelectTree : Tree
     InsertTree : Tree
     UpdateTree : Tree
-        ```
+     ```
 
 ## Продолжаем уточнение формальных спцификаций АТД, подробно и развернуто определяем классы в терминах запросов команд и ограничений.
