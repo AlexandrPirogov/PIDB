@@ -1,6 +1,6 @@
 # Отбраковка классов
 
-На `21-11-18` имеем следующие АТД:
+нa `28-11-18` имеем следующие АТД:
 
 ATDs:
 
@@ -48,16 +48,25 @@ CRUDTable extends Table:
       get_create_status();
       get_update_status();
       get_delete_status();
-```
+``` 
 Отбраковываем `CrudTable`, так как продолжает иерархию
 ---------------
 ```
 ViewTable extends Table:
 ```
 Отбраковываем `ViewTable`, так как это продолжает иерархи. классов.
+--------------
+```
+Scheme:
+   Table tables[];   
+   commands:
+      createTable();
+   queries:
+      get_createTable_status();
+```
 ----------
 ```
-Parser:
+QueryParser:
    GrammarTree tree;
    commands:
       parseQuery(Query);
@@ -119,15 +128,45 @@ Logger:
 ```
 ExecuteMachine:
    commands:
-      executeTransactino(transaction);
+      executeTransaction(transaction);
    queries:
       get_exec_status();
 ```
 
 ------------------
 
+```
+FileManager:
+   String path;
+   String dbFileName;
+   String shemeFileName;
+   commands:
+      open();
+      write();
+      read();
+   queries: 
+      get_open_status();
+      get_write_status();
+      get_read_status();
+```
+-----------------
 
-TODO : Доделать...
+```
+FileParser : Parser
+```
+
+Отбраковываем, так как продолжает иерархию и выбираем классы-кандидатов исключительно по ТАТД. 
+-------------------
+
+```
+Console:
+   
+   commands:
+      read();
+   queries:
+      get_read_status();
+```
+
 
 
 
