@@ -6,7 +6,7 @@ table2{name-type, name2-type, name3-type}
 
 
 # Пример хранения таблиц
-
+```
 ---Db
     |
    data--|
@@ -30,4 +30,5 @@ table2{name-type, name2-type, name3-type}
     |     |
     |     Tables-----[Table1_meta_data, Table2_meta_data,...]
     |
-          
+   
+ ```
