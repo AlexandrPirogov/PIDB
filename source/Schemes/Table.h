@@ -2,7 +2,7 @@
 #include "Row.h"
 #include "crudStatuses.h"
 #include <string>
-
+#include <vector>
 
 
 class Table :public crudStatuses
@@ -11,10 +11,12 @@ class Table :public crudStatuses
        Table(std::string name);
        ~Table();
        void readRow();
+       virtual void insert(Row* row) = 0;
        std::string getName();
+       void toString();
    private:
        
    protected:
        std::string name;
-       Row* rows;
+       std::vector<Row*> rows;
 };

@@ -1,11 +1,26 @@
+#pragma once
+#include <map>
+#include <string>
+#include "Parser.h"
+#include "Tree.h"
 #include "Compiler.h"
 
-Compiler::Compiler(char* query) : query(query)
+Compiler::Compiler(std::string& query) : query(query)
 {
-   this->parse_status = PARSE_STATUS_NIL;
+   compile_status = COMPILE_STATUS_NIL;
 };
 
-int Compiler::get_parse_status()
+void Compiler::compile(Parser* parser, Tree* tree)
 {
-   return this->parse_status;
+   parser->parse(tree, this->plan);
+};
+
+int Compiler::get_compile_status()
+{
+   return this->compile_status;
+};
+
+std::map<std::string, std::string> Compiler::get_plan()
+{
+   return this->plan;
 };

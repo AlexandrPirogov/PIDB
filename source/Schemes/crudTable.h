@@ -9,7 +9,7 @@ class crudTable : public Table
         crudTable(std::string name);
         ~crudTable();
 
-        void create();
+        void insert(Row* row);
         void drop();
         void update();
 

@@ -1,18 +1,8 @@
 #include "Tree.h"
 
-Tree::Tree()
-{
-   this->createTree();
-};
-
 int Tree::get_travel_status()
 {
    return this->travel_status;
-};
-
-void Tree::createTree()
-{
-
 };
 
 void Tree::setLeft(Node* parent, Node* left)
@@ -25,4 +15,9 @@ void Tree::setRight(Node* parent, Node* right)
 {
    parent->right = right;
    right->parent = parent;
+};
+
+Node* Tree::getRoot()
+{
+   return this->root;
 };

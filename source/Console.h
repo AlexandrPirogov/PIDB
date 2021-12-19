@@ -1,4 +1,6 @@
+#pragma once
 #include <iostream>
+#include <string>
 
 class Console
 {
@@ -9,9 +11,10 @@ class Console
 
        Console();
        void readCommand();
+       std::string getCommand();
        int get_read_status();
        protected:
    private:
        int read_status;
-       char* command;
+       std::string command;
 };

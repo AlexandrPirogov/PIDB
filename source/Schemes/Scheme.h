@@ -10,7 +10,7 @@ class Scheme : crudStatuses
      
        Scheme(std::string name);
        ~Scheme();
-       void create(Table table);
+       void create();
        void drop(std::string tableName);
        void update(std::string tableName);
 

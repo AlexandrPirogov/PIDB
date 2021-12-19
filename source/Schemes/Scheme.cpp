@@ -5,7 +5,7 @@
 
 Scheme::Scheme(std::string name) : name(name) {};
 
-void Scheme::create(Table table)
+void Scheme::create()
 {
 
 };

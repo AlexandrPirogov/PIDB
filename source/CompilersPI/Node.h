@@ -1,16 +1,17 @@
 #pragma once
+#include <string>
 
 class Node
 {
    public:
        Node();
-       Node(char* value);
-       void setValue(char* value);
-       char* getValue();
+       Node(std::string& value);
+       void setValue(std::string& value);
+       std::string getValue();
 
        Node* parent = nullptr;
        Node* left = nullptr;
        Node* right = nullptr;
     private:
-       char* value;
+       std::string value;
 };

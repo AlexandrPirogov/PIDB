@@ -1,5 +1,6 @@
 #include "Console.h"
 #include <iostream>
+#include <string>
 
 Console::Console()
 {
@@ -11,13 +12,7 @@ Console::Console()
 void Console::readCommand()
 {
     std::cout << ">";
-    char* command;
-    while(std::cin >> command)
-    {
-        
-        std::cout << command << std::endl;
-        std::cout << ">";
-    }
+    std::getline(std::cin, this->command);
 };
 
 int Console::get_read_status()
@@ -25,4 +20,8 @@ int Console::get_read_status()
    return read_status;
 };
 
+std::string Console::getCommand()
+{
+   return this->command;
+};
 

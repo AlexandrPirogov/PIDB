@@ -1,13 +1,15 @@
 #include "crudTable.h"
 #include <string>
+#include "Row.h"
 
 crudTable::crudTable(std::string name):Table(name)
 {
+
 };
 
-void crudTable::create()
+void crudTable::insert(Row* row)
 {
-
+   this->rows.push_back(row);
 };
 
 void crudTable::drop()
@@ -37,6 +39,6 @@ int crudTable::get_update_status()
 
 crudTable::~crudTable()
 {
-   delete[] rows;
+   this->rows.clear();
 };
 
