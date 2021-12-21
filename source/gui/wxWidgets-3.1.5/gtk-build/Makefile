@@ -28,7 +28,7 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_DIR = mkdir -p
 ICC_PCH_USE_SWITCH = 
-BK_DEPS = /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/bk-deps
+BK_DEPS = /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/bk-deps
 BK_MAKE_PCH = 
 srcdir = ..
 top_srcdir = ..
@@ -60,7 +60,7 @@ TOOLCHAIN_FULLNAME = gtk3-unicode-3.1
 EXTRALIBS = -pthread   -Wl,--version-script,$(wx_top_builddir)/version-script -lz -ldl -lm 
 EXTRALIBS_XML =  -lexpat
 EXTRALIBS_HTML = 
-EXTRALIBS_MEDIA = 
+EXTRALIBS_MEDIA = -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0
 EXTRALIBS_GUI = -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lgthread-2.0 -pthread -lglib-2.0 -lX11 -lSM -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lXtst -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lfontconfig -lfreetype -lpng -lz
 EXTRALIBS_OPENGL = 
 EXTRALIBS_SDL = 
@@ -68,12 +68,12 @@ EXTRALIBS_STC =
 EXTRALIBS_WEBVIEW = 
 WX_CPPFLAGS = -I${wx_top_builddir}/lib/wx/include/gtk3-unicode-3.1 -I${top_srcdir}/include -D_FILE_OFFSET_BITS=64 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include 
 WX_CFLAGS = -pthread -Wall -Wundef -O2 -I/usr/include/gtk-3.0/unix-print -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -D_GNU_SOURCE  -fvisibility=hidden
-WX_CXXFLAGS = -pthread -Wall -Wundef -Wunused-parameter -Wno-ctor-dtor-privacy -Woverloaded-virtual -Wno-deprecated-declarations -O2 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gtk-3.0/unix-print -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid  -fvisibility=hidden -fvisibility-inlines-hidden
+WX_CXXFLAGS = -pthread -Wall -Wundef -Wunused-parameter -Wno-ctor-dtor-privacy -Woverloaded-virtual -Wno-deprecated-declarations -O2 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gtk-3.0/unix-print -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4  -fvisibility=hidden -fvisibility-inlines-hidden
 WX_LDFLAGS = -pthread  
 HOST_SUFFIX = 
 DYLIB_RPATH_INSTALL = 
 DYLIB_RPATH_POSTLINK = 
-wx_top_builddir = /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build
+wx_top_builddir = /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build
 wxCFLAGS_C99 = 
 
 ### Variables: ###
@@ -12111,11 +12111,11 @@ ____wxadv_namedll_DEP = $(__advdll___depname)
 #____wxadv_namelib_DEP = $(__advlib___depname)
 COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_MEDIA_1___mediadll___depname = \
 	$(LIBDIRNAME)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3)
-#__mediadll___depname = $(COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_MEDIA_1___mediadll___depname)
-#__install_mediadll___depname \
-#	= install_mediadll
-#__uninstall_mediadll___depname \
-#	= uninstall_mediadll
+__mediadll___depname = $(COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_MEDIA_1___mediadll___depname)
+__install_mediadll___depname \
+	= install_mediadll
+__uninstall_mediadll___depname \
+	= uninstall_mediadll
 COND_PLATFORM_MACOSX_1___mediadll___macinstnamecmd = -install_name \
 	$(libdir)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf2)
 #__mediadll___macinstnamecmd = $(COND_PLATFORM_MACOSX_1___mediadll___macinstnamecmd)
@@ -14297,22 +14297,22 @@ uninstall_advdll:
 
 wxadv: $(____wxadv_namedll_DEP) $(____wxadv_namelib_DEP)
 
-#$(LIBDIRNAME)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3): $(MEDIADLL_OBJECTS) $(__wxexpat___depname) $(__wxzlib___depname) $(__wxregex___depname) $(__wxtiff___depname) $(__wxjpeg___depname) $(__wxpng___depname) $(__wxscintilla___depname) $(__mediadll___win32rc) $(__coredll___depname) $(__basedll___depname)
-#	$(SHARED_LD_CXX) $@ $(MEDIADLL_OBJECTS) -L$(LIBDIRNAME) -L$(LIBDIRNAME)    -L$(LIBDIRNAME) $(__mediadll___macinstnamecmd) $(__mediadll___importlib) $(__mediadll___soname_flags) $(WXMACVERSION_CMD) $(LDFLAGS)  $(WX_LDFLAGS) $(__LIB_TIFF_p) $(__LIB_JPEG_p) $(__LIB_PNG_p)  $(EXTRALIBS_FOR_GUI) $(__LIB_ZLIB_p) $(__LIB_REGEX_p) $(__LIB_EXPAT_p) $(EXTRALIBS_FOR_BASE) -lwx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_core-$(WX_RELEASE)$(HOST_SUFFIX) -lwx_base$(WXBASEPORT)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE)$(HOST_SUFFIX) $(EXTRALIBS_MEDIA) $(LIBS)
-#	$(DYLIB_RPATH_POSTLINK)
-#	
-#	$(__mediadll___so_symlinks_cmd)
+$(LIBDIRNAME)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3): $(MEDIADLL_OBJECTS) $(__wxexpat___depname) $(__wxzlib___depname) $(__wxregex___depname) $(__wxtiff___depname) $(__wxjpeg___depname) $(__wxpng___depname) $(__wxscintilla___depname) $(__mediadll___win32rc) $(__coredll___depname) $(__basedll___depname)
+	$(SHARED_LD_CXX) $@ $(MEDIADLL_OBJECTS) -L$(LIBDIRNAME) -L$(LIBDIRNAME)    -L$(LIBDIRNAME) $(__mediadll___macinstnamecmd) $(__mediadll___importlib) $(__mediadll___soname_flags) $(WXMACVERSION_CMD) $(LDFLAGS)  $(WX_LDFLAGS) $(__LIB_TIFF_p) $(__LIB_JPEG_p) $(__LIB_PNG_p)  $(EXTRALIBS_FOR_GUI) $(__LIB_ZLIB_p) $(__LIB_REGEX_p) $(__LIB_EXPAT_p) $(EXTRALIBS_FOR_BASE) -lwx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_core-$(WX_RELEASE)$(HOST_SUFFIX) -lwx_base$(WXBASEPORT)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE)$(HOST_SUFFIX) $(EXTRALIBS_MEDIA) $(LIBS)
+	$(DYLIB_RPATH_POSTLINK)
+	
+	$(__mediadll___so_symlinks_cmd)
 
-#install_mediadll: $(__mediadll___depname)
-#	$(INSTALL_DIR) $(DESTDIR)$(libdir)
-#	$(INSTALL_DATA) $(LIBDIRNAME)/$(LIBPREFIX)wx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media-$(WX_RELEASE)$(HOST_SUFFIX).$(DLLIMP_SUFFIX) $(DESTDIR)$(libdir)
-#	$(INSTALL_PROGRAM) $(LIBDIRNAME)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3) $(DESTDIR)$(dlldir)
-#	(cd $(DESTDIR)$(libdir) ; $(__mediadll___so_symlinks_inst_cmd))
+install_mediadll: $(__mediadll___depname)
+	$(INSTALL_DIR) $(DESTDIR)$(libdir)
+	$(INSTALL_DATA) $(LIBDIRNAME)/$(LIBPREFIX)wx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media-$(WX_RELEASE)$(HOST_SUFFIX).$(DLLIMP_SUFFIX) $(DESTDIR)$(libdir)
+	$(INSTALL_PROGRAM) $(LIBDIRNAME)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3) $(DESTDIR)$(dlldir)
+	(cd $(DESTDIR)$(libdir) ; $(__mediadll___so_symlinks_inst_cmd))
 
-#uninstall_mediadll: 
-#	rm -f $(DESTDIR)$(libdir)/$(LIBPREFIX)wx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media-$(WX_RELEASE)$(HOST_SUFFIX).$(DLLIMP_SUFFIX)
-#	rm -f $(DESTDIR)$(dlldir)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3)
-#	(cd $(DESTDIR)$(libdir) ; $(__mediadll___so_symlinks_uninst_cmd))
+uninstall_mediadll: 
+	rm -f $(DESTDIR)$(libdir)/$(LIBPREFIX)wx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media-$(WX_RELEASE)$(HOST_SUFFIX).$(DLLIMP_SUFFIX)
+	rm -f $(DESTDIR)$(dlldir)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_media$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3)
+	(cd $(DESTDIR)$(libdir) ; $(__mediadll___so_symlinks_uninst_cmd))
 
 #./.pch/wxprec_mediadll/wx/wxprec.h.gch: 
 #	$(BK_MAKE_PCH) ./.pch/wxprec_mediadll/wx/wxprec.h.gch wx/wxprec.h $(CXX) $(MEDIADLL_CXXFLAGS)
@@ -14332,7 +14332,7 @@ wxadv: $(____wxadv_namedll_DEP) $(____wxadv_namelib_DEP)
 #./.pch/wxprec_medialib/wx/wxprec.h.gch: 
 #	$(BK_MAKE_PCH) ./.pch/wxprec_medialib/wx/wxprec.h.gch wx/wxprec.h $(CXX) $(MEDIALIB_CXXFLAGS)
 
-#wxmedia: $(____wxmedia_namedll_DEP) $(____wxmedia_namelib_DEP)
+wxmedia: $(____wxmedia_namedll_DEP) $(____wxmedia_namelib_DEP)
 
 $(LIBDIRNAME)/$(DLLPREFIX)$(WXDLLNAMEPREFIXGUI)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_html$(WXCOMPILER)$(VENDORTAG)$(WXDLLVERSIONTAG)$(dll___targetsuf3): $(HTMLDLL_OBJECTS) $(__wxexpat___depname) $(__wxzlib___depname) $(__wxregex___depname) $(__wxtiff___depname) $(__wxjpeg___depname) $(__wxpng___depname) $(__wxscintilla___depname) $(__htmldll___win32rc) $(__coredll___depname) $(__basedll___depname)
 	$(SHARED_LD_CXX) $@ $(HTMLDLL_OBJECTS) -L$(LIBDIRNAME) -L$(LIBDIRNAME)    -L$(LIBDIRNAME) $(__htmldll___macinstnamecmd) $(__htmldll___importlib) $(__htmldll___soname_flags) $(WXMACVERSION_CMD) $(LDFLAGS)  $(WX_LDFLAGS) $(__LIB_TIFF_p) $(__LIB_JPEG_p) $(__LIB_PNG_p)  $(EXTRALIBS_FOR_GUI) $(__LIB_ZLIB_p) $(__LIB_REGEX_p) $(__LIB_EXPAT_p) $(EXTRALIBS_FOR_BASE) -lwx_$(PORTNAME)$(WXUNIVNAME)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)_core-$(WX_RELEASE)$(HOST_SUFFIX) -lwx_base$(WXBASEPORT)$(WXUNICODEFLAG)$(WXDEBUGFLAG)$(WX_LIB_FLAVOUR)-$(WX_RELEASE)$(HOST_SUFFIX) $(EXTRALIBS_HTML) $(LIBS)

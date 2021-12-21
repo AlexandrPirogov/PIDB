@@ -14,6 +14,7 @@ class Table :public crudStatuses
        virtual void insert(Row* row) = 0;
        std::string getName();
        void toString();
+       std::string getRows(); 
    private:
        
    protected:

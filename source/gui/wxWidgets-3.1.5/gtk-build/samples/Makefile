@@ -2,7 +2,7 @@
 # Makefile : Builds wxWindows samples for Unix.
 #
 
-SAMPLES_SUBDIRS=animate archive artprov aui calendar caret clipboard collpane combo config console dataview debugrpt dialogs dialup display dnd docview dragimag drawing erase event except exec font fswatcher grid help htlbox html/about html/help html/helpview html/printing html/test html/virtual html/widget html/zip image internat ipc joytest keyboard layout listctrl mdi menu minimal notebook popup power preferences printing propgrid render ribbon richtext sashtest scroll shaped sockets sound splash splitter statbar stc svg taborder taskbar text thread toolbar treectrl treelist typetest uiaction validate vscroll widgets wizard wrapsizer xrc 
+SAMPLES_SUBDIRS=animate archive artprov aui calendar caret clipboard collpane combo config console dataview debugrpt dialogs dialup display dnd docview dragimag drawing erase event except exec font fswatcher grid help htlbox html/about html/help html/helpview html/printing html/test html/virtual html/widget html/zip image internat ipc joytest keyboard layout listctrl mdi mediaplayer menu minimal notebook popup power preferences printing propgrid render ribbon richtext sashtest scroll shaped sockets sound splash splitter statbar stc svg taborder taskbar text thread toolbar treectrl treelist typetest uiaction validate vscroll widgets wizard wrapsizer xrc 
 
 ALL_TARGETS := all clean distclean
 

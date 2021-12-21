@@ -25,11 +25,11 @@ check_dirname()
 
 # set the variables which allow the real wx-config to check if we're using it
 # in place or after installation
-this_prefix=`check_dirname "/home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/.."`
+this_prefix=`check_dirname "/home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/.."`
 if [ "x$this_prefix" = "x" ]; then
     exit 1
 fi
-this_exec_prefix=`check_dirname "/home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build"`
+this_exec_prefix=`check_dirname "/home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build"`
 if [ "x$this_exec_prefix" = "x" ]; then
     exit 1
 fi

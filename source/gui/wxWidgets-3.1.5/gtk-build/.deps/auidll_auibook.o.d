@@ -1,6 +1,6 @@
 auidll_auibook.o: ../src/aui/auibook.cpp ../include/wx/wxprec.h \
  ../include/wx/defs.h ../include/wx/platform.h ../include/wx/compiler.h \
- /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk2-unicode-3.1/wx/setup.h \
+ /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk3-unicode-3.1/wx/setup.h \
  ../include/wx/chkconf.h ../include/wx/gtk/chkconf.h \
  ../include/wx/unix/chkconf.h ../include/wx/version.h ../include/wx/cpp.h \
  ../include/wx/dlimpexp.h ../include/wx/types.h ../include/wx/debug.h \
@@ -30,9 +30,9 @@ auidll_auibook.o: ../src/aui/auibook.cpp ../include/wx/wxprec.h \
  ../include/wx/imagtiff.h ../include/wx/imagpnm.h ../include/wx/imagxpm.h \
  ../include/wx/imagiff.h ../include/wx/gtk/bitmap.h \
  ../include/wx/gtk/pen.h ../include/wx/brush.h ../include/wx/gtk/brush.h \
- ../include/wx/aui/tabartgtk.h ../include/wx/aui/framemanager.h \
- ../include/wx/window.h ../include/wx/event.h ../include/wx/clntdata.h \
- ../include/wx/cursor.h ../include/wx/gtk/cursor.h ../include/wx/utils.h \
+ ../include/wx/aui/framemanager.h ../include/wx/window.h \
+ ../include/wx/event.h ../include/wx/clntdata.h ../include/wx/cursor.h \
+ ../include/wx/gtk/cursor.h ../include/wx/utils.h \
  ../include/wx/meta/implicitconversion.h ../include/wx/mousestate.h \
  ../include/wx/kbdstate.h ../include/wx/platinfo.h ../include/wx/thread.h \
  ../include/wx/tracker.h ../include/wx/meta/convertible.h \

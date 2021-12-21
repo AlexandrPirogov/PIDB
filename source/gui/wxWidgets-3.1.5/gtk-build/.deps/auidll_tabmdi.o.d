@@ -1,6 +1,6 @@
 auidll_tabmdi.o: ../src/aui/tabmdi.cpp ../include/wx/wxprec.h \
  ../include/wx/defs.h ../include/wx/platform.h ../include/wx/compiler.h \
- /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk2-unicode-3.1/wx/setup.h \
+ /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk3-unicode-3.1/wx/setup.h \
  ../include/wx/chkconf.h ../include/wx/gtk/chkconf.h \
  ../include/wx/unix/chkconf.h ../include/wx/version.h ../include/wx/cpp.h \
  ../include/wx/dlimpexp.h ../include/wx/types.h ../include/wx/debug.h \
@@ -59,8 +59,8 @@ auidll_tabmdi.o: ../src/aui/tabmdi.cpp ../include/wx/wxprec.h \
  ../include/wx/gtk/menu.h ../include/wx/gtk/mdi.h \
  ../include/wx/aui/auibook.h ../include/wx/aui/tabart.h \
  ../include/wx/brush.h ../include/wx/gtk/brush.h \
- ../include/wx/aui/tabartgtk.h ../include/wx/aui/framemanager.h \
- ../include/wx/timer.h ../include/wx/stopwatch.h ../include/wx/time.h \
- ../include/wx/sizer.h ../include/wx/log.h ../include/wx/generic/logg.h \
+ ../include/wx/aui/framemanager.h ../include/wx/timer.h \
+ ../include/wx/stopwatch.h ../include/wx/time.h ../include/wx/sizer.h \
+ ../include/wx/log.h ../include/wx/generic/logg.h \
  ../include/wx/settings.h ../include/wx/stockitem.h \
  ../include/wx/aui/dockart.h

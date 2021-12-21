@@ -5,9 +5,19 @@
 #include "Tree.h"
 #include "Compiler.h"
 
+Compiler::Compiler()
+{
+  
+};
+
 Compiler::Compiler(std::string& query) : query(query)
 {
    compile_status = COMPILE_STATUS_NIL;
+};
+
+void Compiler::setQuery(std::string& query)
+{
+   this->query = query;
 };
 
 void Compiler::compile(Parser* parser, Tree* tree)

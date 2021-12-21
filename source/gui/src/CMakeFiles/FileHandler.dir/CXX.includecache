@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/Desktop/PIDB/source/FileHandlerPI/FileHandler.cpp
+FileHandler.h
+/home/alex/Desktop/PIDB/source/FileHandlerPI/FileHandler.h
+fstream
+-
+iostream
+-
+sys/types.h
+-
+sys/stat.h
+-
+fstream
+-
+string
+-
+vector
+-
+dirent.h
+-
+stdio.h
+-
+
+/home/alex/Desktop/PIDB/source/FileHandlerPI/FileHandler.h
+string
+-
+vector
+-
+
+/home/alex/Desktop/PIDB/source/FileHandlerPI/main.cpp
+

@@ -11,7 +11,11 @@ class Tree
        const int TRAVEL_STATUS_OK = 0;
        const int TRAVEL_STATUS_ERR = 1;
    
+
+       
        virtual void travel(Node* current, std::map<std::string, std::string>& plan) = 0;
+       
+      
        Node* getRoot();
        int get_travel_status();
    protected:

@@ -24,7 +24,10 @@ void ExecuteMachine::execute(std::map<std::string, std::string>& plan, FileHandl
 
 void ExecuteMachine::readTable(std::map<std::string, std::string>& plan, FileHandler* filehandler)
 {
-	std::cout <<"ExecuteReadTable\n";
+	if(this->currentTable != nullptr)
+        delete this->currentTable;
+    
+    std::cout <<"ExecuteReadTable\n";
 	std::string path = "/PIDB/data/tables";
 	std::cout << "План = " << plan["ИЗ"];
 	filehandler->read(path, plan["ИЗ"]);
@@ -38,6 +41,10 @@ void ExecuteMachine::readTable(std::map<std::string, std::string>& plan, FileHan
 	      this->currentTable->insert(r);
 	};
 	currentTable->toString();
-        delete currentTable;
+    rows.clear();
+};
 
+std::string ExecuteMachine::getTableResult()
+{
+   return this->currentTable->getRows();
 };

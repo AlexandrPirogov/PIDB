@@ -1,7 +1,7 @@
 propgriddll_advprops.o: ../src/propgrid/advprops.cpp \
  ../include/wx/wxprec.h ../include/wx/defs.h ../include/wx/platform.h \
  ../include/wx/compiler.h \
- /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk2-unicode-3.1/wx/setup.h \
+ /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk3-unicode-3.1/wx/setup.h \
  ../include/wx/chkconf.h ../include/wx/gtk/chkconf.h \
  ../include/wx/unix/chkconf.h ../include/wx/version.h ../include/wx/cpp.h \
  ../include/wx/dlimpexp.h ../include/wx/types.h ../include/wx/debug.h \
@@ -75,9 +75,7 @@ propgriddll_advprops.o: ../src/propgrid/advprops.cpp \
  ../include/wx/odcombo.h ../include/wx/combo.h ../include/wx/renderer.h \
  ../include/wx/generic/combo.h ../include/wx/ctrlsub.h \
  ../include/wx/vlbox.h ../include/wx/vscroll.h ../include/wx/position.h \
- ../include/wx/timer.h ../include/wx/stopwatch.h ../include/wx/dcgraph.h \
- ../include/wx/graphics.h ../include/wx/dcclient.h \
- ../include/wx/dcmemory.h ../include/wx/datectrl.h \
+ ../include/wx/timer.h ../include/wx/stopwatch.h ../include/wx/datectrl.h \
  ../include/wx/datetimectrl.h ../include/wx/generic/datectrl.h \
  ../include/wx/compositewin.h ../include/wx/dateevt.h \
  ../include/wx/fontdlg.h ../include/wx/fontdata.h ../include/wx/encinfo.h \

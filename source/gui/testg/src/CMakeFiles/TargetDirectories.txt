@@ -1,3 +1,0 @@
-/home/pirogov/PIDB/source/gui/testg/src/CMakeFiles/rebuild_cache.dir
-/home/pirogov/PIDB/source/gui/testg/src/CMakeFiles/edit_cache.dir
-/home/pirogov/PIDB/source/gui/testg/src/CMakeFiles/myGreatProject.dir

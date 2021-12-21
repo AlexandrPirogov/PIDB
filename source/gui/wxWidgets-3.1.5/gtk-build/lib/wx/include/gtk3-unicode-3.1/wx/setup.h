@@ -325,7 +325,7 @@
 
 #define wxUSE_SOUND 1
 
-#define wxUSE_MEDIACTRL     0
+#define wxUSE_MEDIACTRL 1
 
 #define wxUSE_XRC 1
 
@@ -667,7 +667,7 @@
 
    Recommended setting: 1 (wxMediaCtrl won't work by default without it).
  */
-#define wxUSE_GSTREAMER 0
+#define wxUSE_GSTREAMER 1
 
 #define wxUSE_GSTREAMER_PLAYER 0
 

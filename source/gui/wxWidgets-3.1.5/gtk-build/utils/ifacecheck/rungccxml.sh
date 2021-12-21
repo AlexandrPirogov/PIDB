@@ -49,7 +49,7 @@ for f in $headerlist; do
 done
 
 # filter the configure flags to pass to gccxml
-wx_top_builddir="/home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build"
+wx_top_builddir="/home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build"
 top_srcdir="../../.."
 flags=" "
 

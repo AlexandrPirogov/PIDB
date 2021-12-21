@@ -15,7 +15,8 @@ class ExecuteMachine
 
        ExecuteMachine( ); 
        void execute(std::map<std::string, std::string>& plan, FileHandler* filehandler);
-
+       
+       std::string getTableResult();
    protected:
        int exec_status;
      

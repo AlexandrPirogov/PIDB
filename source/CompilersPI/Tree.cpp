@@ -1,4 +1,5 @@
 #include "Tree.h"
+#include <string>
 
 int Tree::get_travel_status()
 {

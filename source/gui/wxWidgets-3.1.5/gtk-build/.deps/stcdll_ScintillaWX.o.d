@@ -1,6 +1,6 @@
 stcdll_ScintillaWX.o: ../src/stc/ScintillaWX.cpp ../include/wx/wxprec.h \
  ../include/wx/defs.h ../include/wx/platform.h ../include/wx/compiler.h \
- /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk2-unicode-3.1/wx/setup.h \
+ /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk3-unicode-3.1/wx/setup.h \
  ../include/wx/chkconf.h ../include/wx/gtk/chkconf.h \
  ../include/wx/unix/chkconf.h ../include/wx/version.h ../include/wx/cpp.h \
  ../include/wx/dlimpexp.h ../include/wx/types.h ../include/wx/debug.h \
@@ -95,11 +95,8 @@ stcdll_ScintillaWX.o: ../src/stc/ScintillaWX.cpp ../include/wx/wxprec.h \
  ../src/stc/PlatWX.h ../include/wx/imaglist.h \
  ../include/wx/generic/imaglist.h ../include/wx/popupwin.h \
  ../include/wx/nonownedwnd.h ../include/wx/gtk/nonownedwnd.h \
- ../include/wx/gtk/popupwin.h /usr/include/gtk-2.0/gdk/gdk.h \
- /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
- /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
- /usr/include/glib-2.0/gio/gioenums.h /usr/include/glib-2.0/glib-object.h \
- /usr/include/glib-2.0/gobject/gbinding.h /usr/include/glib-2.0/glib.h \
+ ../include/wx/gtk/popupwin.h /usr/include/gtk-3.0/gdk/gdk.h \
+ /usr/include/gtk-3.0/gdk/gdkconfig.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
@@ -167,6 +164,11 @@ stcdll_ScintillaWX.o: ../src/stc/ScintillaWX.cpp ../include/wx/wxprec.h \
  /usr/include/glib-2.0/glib/deprecated/grel.h \
  /usr/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
+ /usr/include/gtk-3.0/gdk/gdkversionmacros.h \
+ /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h \
+ /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
+ /usr/include/glib-2.0/gio/gioenums.h /usr/include/glib-2.0/glib-object.h \
+ /usr/include/glib-2.0/gobject/gbinding.h \
  /usr/include/glib-2.0/gobject/gobject.h \
  /usr/include/glib-2.0/gobject/gtype.h \
  /usr/include/glib-2.0/gobject/gvalue.h \
@@ -330,10 +332,7 @@ stcdll_ScintillaWX.o: ../src/stc/ScintillaWX.cpp ../include/wx/wxprec.h \
  /usr/include/glib-2.0/gio/gzlibcompressor.h \
  /usr/include/glib-2.0/gio/gzlibdecompressor.h \
  /usr/include/glib-2.0/gio/gio-autocleanups.h \
- /usr/include/gtk-2.0/gdk/gdkscreen.h /usr/include/cairo/cairo.h \
- /usr/include/cairo/cairo-version.h /usr/include/cairo/cairo-features.h \
- /usr/include/cairo/cairo-deprecated.h \
- /usr/include/gtk-2.0/gdk/gdktypes.h /usr/include/pango-1.0/pango/pango.h \
+ /usr/include/gtk-3.0/gdk/gdktypes.h /usr/include/pango-1.0/pango/pango.h \
  /usr/include/pango-1.0/pango/pango-attributes.h \
  /usr/include/pango-1.0/pango/pango-font.h \
  /usr/include/pango-1.0/pango/pango-coverage.h \
@@ -364,13 +363,24 @@ stcdll_ScintillaWX.o: ../src/stc/ScintillaWX.cpp ../include/wx/wxprec.h \
  /usr/include/pango-1.0/pango/pango-layout.h \
  /usr/include/pango-1.0/pango/pango-tabs.h \
  /usr/include/pango-1.0/pango/pango-renderer.h \
- /usr/include/pango-1.0/pango/pango-utils.h \
- /usr/lib/x86_64-linux-gnu/gtk-2.0/include/gdkconfig.h \
- /usr/include/gtk-2.0/gdk/gdkdisplay.h \
- /usr/include/gtk-2.0/gdk/gdkevents.h /usr/include/gtk-2.0/gdk/gdkcolor.h \
- /usr/include/gtk-2.0/gdk/gdkdnd.h /usr/include/gtk-2.0/gdk/gdkinput.h \
- /usr/include/gtk-2.0/gdk/gdkcairo.h /usr/include/gtk-2.0/gdk/gdkpixbuf.h \
- /usr/include/gtk-2.0/gdk/gdkrgb.h \
+ /usr/include/pango-1.0/pango/pango-utils.h /usr/include/cairo/cairo.h \
+ /usr/include/cairo/cairo-version.h /usr/include/cairo/cairo-features.h \
+ /usr/include/cairo/cairo-deprecated.h \
+ /usr/include/gtk-3.0/gdk/gdkscreen.h \
+ /usr/include/gtk-3.0/gdk/gdkdisplay.h \
+ /usr/include/gtk-3.0/gdk/gdkevents.h /usr/include/gtk-3.0/gdk/gdkdnd.h \
+ /usr/include/gtk-3.0/gdk/gdkdevice.h \
+ /usr/include/gtk-3.0/gdk/gdkdevicetool.h \
+ /usr/include/gtk-3.0/gdk/gdkdevicemanager.h \
+ /usr/include/gtk-3.0/gdk/gdkseat.h /usr/include/gtk-3.0/gdk/gdkwindow.h \
+ /usr/include/gtk-3.0/gdk/gdkdrawingcontext.h \
+ /usr/include/gtk-3.0/gdk/gdkframeclock.h \
+ /usr/include/gtk-3.0/gdk/gdkframetimings.h \
+ /usr/include/gtk-3.0/gdk/gdkmonitor.h \
+ /usr/include/gtk-3.0/gdk/gdkrectangle.h \
+ /usr/include/gtk-3.0/gdk/gdkcairo.h \
+ /usr/include/gtk-3.0/gdk/deprecated/gdkcolor.h \
+ /usr/include/gtk-3.0/gdk/gdkrgba.h /usr/include/gtk-3.0/gdk/gdkpixbuf.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h \
@@ -383,17 +393,16 @@ stcdll_ScintillaWX.o: ../src/stc/ScintillaWX.cpp ../include/wx/wxprec.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h \
  /usr/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h \
  /usr/include/pango-1.0/pango/pangocairo.h \
- /usr/include/gtk-2.0/gdk/gdkcursor.h \
- /usr/include/gtk-2.0/gdk/gdkdisplaymanager.h \
- /usr/include/gtk-2.0/gdk/gdkdrawable.h /usr/include/gtk-2.0/gdk/gdkgc.h \
- /usr/include/gtk-2.0/gdk/gdkenumtypes.h \
- /usr/include/gtk-2.0/gdk/gdkfont.h /usr/include/gtk-2.0/gdk/gdkimage.h \
- /usr/include/gtk-2.0/gdk/gdkkeys.h /usr/include/gtk-2.0/gdk/gdkpango.h \
- /usr/include/gtk-2.0/gdk/gdkpixmap.h \
- /usr/include/gtk-2.0/gdk/gdkproperty.h \
- /usr/include/gtk-2.0/gdk/gdkregion.h \
- /usr/include/gtk-2.0/gdk/gdkselection.h \
- /usr/include/gtk-2.0/gdk/gdkspawn.h \
- /usr/include/gtk-2.0/gdk/gdktestutils.h \
- /usr/include/gtk-2.0/gdk/gdkwindow.h \
- /usr/include/gtk-2.0/gdk/gdkvisual.h
+ /usr/include/gtk-3.0/gdk/gdkcursor.h \
+ /usr/include/gtk-3.0/gdk/gdkdevicepad.h \
+ /usr/include/gtk-3.0/gdk/gdkdisplaymanager.h \
+ /usr/include/gtk-3.0/gdk/gdkenumtypes.h \
+ /usr/include/gtk-3.0/gdk/gdkglcontext.h \
+ /usr/include/gtk-3.0/gdk/gdkkeys.h /usr/include/gtk-3.0/gdk/gdkkeysyms.h \
+ /usr/include/gtk-3.0/gdk/gdkmain.h /usr/include/gtk-3.0/gdk/gdkpango.h \
+ /usr/include/gtk-3.0/gdk/gdkproperty.h \
+ /usr/include/gtk-3.0/gdk/gdkselection.h \
+ /usr/include/gtk-3.0/gdk/gdktestutils.h \
+ /usr/include/gtk-3.0/gdk/gdkthreads.h \
+ /usr/include/gtk-3.0/gdk/gdkvisual.h \
+ /usr/include/gtk-3.0/gdk/gdk-autocleanup.h

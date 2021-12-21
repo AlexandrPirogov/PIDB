@@ -1,6 +1,6 @@
 auidll_xh_aui.o: ../src/xrc/xh_aui.cpp ../include/wx/wxprec.h \
  ../include/wx/defs.h ../include/wx/platform.h ../include/wx/compiler.h \
- /home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk2-unicode-3.1/wx/setup.h \
+ /home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk3-unicode-3.1/wx/setup.h \
  ../include/wx/chkconf.h ../include/wx/gtk/chkconf.h \
  ../include/wx/unix/chkconf.h ../include/wx/version.h ../include/wx/cpp.h \
  ../include/wx/dlimpexp.h ../include/wx/types.h ../include/wx/debug.h \
@@ -52,8 +52,7 @@ auidll_xh_aui.o: ../src/xrc/xh_aui.cpp ../include/wx/wxprec.h \
  ../include/wx/sizer.h ../include/wx/aui/auibook.h \
  ../include/wx/aui/tabart.h ../include/wx/pen.h \
  ../include/wx/peninfobase.h ../include/wx/gtk/pen.h \
- ../include/wx/brush.h ../include/wx/gtk/brush.h \
- ../include/wx/aui/tabartgtk.h ../include/wx/bookctrl.h \
+ ../include/wx/brush.h ../include/wx/gtk/brush.h ../include/wx/bookctrl.h \
  ../include/wx/control.h ../include/wx/gtk/control.h \
  ../include/wx/withimages.h ../include/wx/notebook.h \
  ../include/wx/gtk/notebook.h ../include/wx/containr.h

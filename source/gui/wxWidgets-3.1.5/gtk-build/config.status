@@ -393,7 +393,7 @@ on `(hostname || uname -n) 2>/dev/null | sed 1q`
 "
 
 # Files that config.status was made for.
-config_files=" lib/wx/config/gtk3-unicode-3.1:wx-config.in lib/wx/config/inplace-gtk3-unicode-3.1:wx-config-inplace.in utils/ifacecheck/rungccxml.sh version-script Makefile samples/html/Makefile samples/xrc/Makefile samples/wrapsizer/Makefile samples/wizard/Makefile samples/widgets/Makefile samples/vscroll/Makefile samples/validate/Makefile samples/uiaction/Makefile samples/typetest/Makefile samples/treelist/Makefile samples/treectrl/Makefile samples/toolbar/Makefile samples/thread/Makefile samples/text/Makefile samples/taskbar/Makefile samples/taborder/Makefile samples/svg/Makefile samples/stc/Makefile samples/statbar/Makefile samples/splitter/Makefile samples/splash/Makefile samples/sound/Makefile samples/sockets/Makefile samples/shaped/Makefile samples/scroll/Makefile samples/sashtest/Makefile samples/richtext/Makefile samples/ribbon/Makefile samples/render/Makefile samples/propgrid/Makefile samples/printing/Makefile samples/preferences/Makefile samples/power/Makefile samples/popup/Makefile samples/notebook/Makefile samples/minimal/Makefile samples/menu/Makefile samples/mdi/Makefile samples/listctrl/Makefile samples/layout/Makefile samples/keyboard/Makefile samples/joytest/Makefile samples/ipc/Makefile samples/internat/Makefile samples/image/Makefile samples/html/zip/Makefile samples/html/widget/Makefile samples/html/virtual/Makefile samples/html/test/Makefile samples/html/printing/Makefile samples/html/helpview/Makefile samples/html/help/Makefile samples/html/about/Makefile samples/htlbox/Makefile samples/help/Makefile samples/grid/Makefile samples/fswatcher/Makefile samples/font/Makefile samples/exec/Makefile samples/except/Makefile samples/event/Makefile samples/erase/Makefile samples/drawing/Makefile samples/dragimag/Makefile samples/docview/Makefile samples/dnd/Makefile samples/display/Makefile samples/dialup/Makefile samples/dialogs/Makefile samples/debugrpt/Makefile samples/dataview/Makefile samples/console/Makefile samples/config/Makefile samples/combo/Makefile samples/collpane/Makefile samples/clipboard/Makefile samples/caret/Makefile samples/calendar/Makefile samples/aui/Makefile samples/artprov/Makefile samples/archive/Makefile samples/animate/Makefile samples/Makefile demos/bombs/Makefile demos/forty/Makefile demos/fractal/Makefile demos/life/Makefile demos/Makefile demos/poem/Makefile utils/emulator/Makefile utils/emulator/src/Makefile utils/execmon/Makefile utils/helpview/Makefile utils/helpview/src/Makefile utils/hhp2cached/Makefile utils/ifacecheck/src/Makefile utils/Makefile utils/screenshotgen/Makefile utils/screenshotgen/src/Makefile utils/wxrc/Makefile tests/benchmarks/Makefile tests/Makefile"
+config_files=" lib/wx/config/gtk3-unicode-3.1:wx-config.in lib/wx/config/inplace-gtk3-unicode-3.1:wx-config-inplace.in utils/ifacecheck/rungccxml.sh version-script Makefile samples/html/Makefile samples/xrc/Makefile samples/wrapsizer/Makefile samples/wizard/Makefile samples/widgets/Makefile samples/vscroll/Makefile samples/validate/Makefile samples/uiaction/Makefile samples/typetest/Makefile samples/treelist/Makefile samples/treectrl/Makefile samples/toolbar/Makefile samples/thread/Makefile samples/text/Makefile samples/taskbar/Makefile samples/taborder/Makefile samples/svg/Makefile samples/stc/Makefile samples/statbar/Makefile samples/splitter/Makefile samples/splash/Makefile samples/sound/Makefile samples/sockets/Makefile samples/shaped/Makefile samples/scroll/Makefile samples/sashtest/Makefile samples/richtext/Makefile samples/ribbon/Makefile samples/render/Makefile samples/propgrid/Makefile samples/printing/Makefile samples/preferences/Makefile samples/power/Makefile samples/popup/Makefile samples/notebook/Makefile samples/minimal/Makefile samples/menu/Makefile samples/mediaplayer/Makefile samples/mdi/Makefile samples/listctrl/Makefile samples/layout/Makefile samples/keyboard/Makefile samples/joytest/Makefile samples/ipc/Makefile samples/internat/Makefile samples/image/Makefile samples/html/zip/Makefile samples/html/widget/Makefile samples/html/virtual/Makefile samples/html/test/Makefile samples/html/printing/Makefile samples/html/helpview/Makefile samples/html/help/Makefile samples/html/about/Makefile samples/htlbox/Makefile samples/help/Makefile samples/grid/Makefile samples/fswatcher/Makefile samples/font/Makefile samples/exec/Makefile samples/except/Makefile samples/event/Makefile samples/erase/Makefile samples/drawing/Makefile samples/dragimag/Makefile samples/docview/Makefile samples/dnd/Makefile samples/display/Makefile samples/dialup/Makefile samples/dialogs/Makefile samples/debugrpt/Makefile samples/dataview/Makefile samples/console/Makefile samples/config/Makefile samples/combo/Makefile samples/collpane/Makefile samples/clipboard/Makefile samples/caret/Makefile samples/calendar/Makefile samples/aui/Makefile samples/artprov/Makefile samples/archive/Makefile samples/animate/Makefile samples/Makefile demos/forty/Makefile demos/fractal/Makefile demos/poem/Makefile demos/Makefile demos/life/Makefile demos/bombs/Makefile utils/ifacecheck/src/Makefile utils/hhp2cached/Makefile utils/helpview/src/Makefile utils/helpview/Makefile utils/screenshotgen/src/Makefile utils/screenshotgen/Makefile utils/wxrc/Makefile utils/Makefile utils/execmon/Makefile utils/emulator/src/Makefile utils/emulator/Makefile tests/Makefile tests/benchmarks/Makefile"
 config_headers=" lib/wx/include/gtk3-unicode-3.1/wx/setup.h:setup.h.in"
 config_commands=" wx-config"
 
@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build'
+ac_pwd='/home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build'
 srcdir='..'
 INSTALL='/usr/bin/install -c'
 test -n "$AWK" || AWK=awk
@@ -641,9 +641,9 @@ S["LDFLAGS_GL"]=""
 S["SAMPLES_CXXFLAGS"]=" -fPIC -DPIC"
 S["SAMPLES_SUBDIRS"]="animate archive artprov aui calendar caret clipboard collpane combo config console dataview debugrpt dialogs dialup display dnd docview dragimag dra"\
 "wing erase event except exec font fswatcher grid help htlbox html/about html/help html/helpview html/printing html/test html/virtual html/widget htm"\
-"l/zip image internat ipc joytest keyboard layout listctrl mdi menu minimal notebook popup power preferences printing propgrid render ribbon richtext"\
-" sashtest scroll shaped sockets sound splash splitter statbar stc svg taborder taskbar text thread toolbar treectrl treelist typetest uiaction valid"\
-"ate vscroll widgets wizard wrapsizer xrc "
+"l/zip image internat ipc joytest keyboard layout listctrl mdi mediaplayer menu minimal notebook popup power preferences printing propgrid render rib"\
+"bon richtext sashtest scroll shaped sockets sound splash splitter statbar stc svg taborder taskbar text thread toolbar treectrl treelist typetest ui"\
+"action validate vscroll widgets wizard wrapsizer xrc "
 S["DISTDIR"]="wx$(TOOLKIT)"
 S["GUIDIST"]="GTK_DIST SAMPLES_DIST DEMOS_DIST UTILS_DIST MISC_DIST INTL_DIST"
 S["WXCONFIG_RESFLAGS"]=""
@@ -657,7 +657,8 @@ S["WX_CXXFLAGS"]="-pthread -Wall -Wundef -Wunused-parameter -Wno-ctor-dtor-priva
 "sr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0"\
 "/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gtk-3.0/unix-print -I/usr/include/gtk-3.0 -I/usr/includ"\
 "e/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/"\
-"include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid  -fvisibility=hidden -fvisibility-inlines-hidden"
+"include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4  -fvi"\
+"sibility=hidden -fvisibility-inlines-hidden"
 S["WXCONFIG_CFLAGS"]="-pthread"
 S["WX_CFLAGS"]="-pthread -Wall -Wundef -O2 -I/usr/include/gtk-3.0/unix-print -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/"\
 "include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/inclu"\
@@ -816,9 +817,9 @@ S["COND_MONOLITHIC_0_USE_RICHTEXT_1"]=""
 S["COND_MONOLITHIC_0_USE_RIBBON_1"]=""
 S["COND_MONOLITHIC_0_USE_QA_1"]=""
 S["COND_MONOLITHIC_0_USE_PROPGRID_1"]=""
-S["COND_MONOLITHIC_0_USE_MEDIA_1"]="#"
+S["COND_MONOLITHIC_0_USE_MEDIA_1"]=""
 S["COND_MONOLITHIC_0_USE_HTML_1"]=""
-S["COND_MONOLITHIC_0_USE_GUI_1_USE_MEDIA_1"]="#"
+S["COND_MONOLITHIC_0_USE_GUI_1_USE_MEDIA_1"]=""
 S["COND_MONOLITHIC_0_USE_GUI_1"]=""
 S["COND_MONOLITHIC_0_USE_AUI_1"]=""
 S["COND_MONOLITHIC_0_SHARED_1_USE_XRC_1"]=""
@@ -828,7 +829,7 @@ S["COND_MONOLITHIC_0_SHARED_1_USE_RIBBON_1"]=""
 S["COND_MONOLITHIC_0_SHARED_1_USE_PROPGRID_1"]=""
 S["COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_WEBVIEW_1"]="#"
 S["COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_QA_1"]=""
-S["COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_MEDIA_1"]="#"
+S["COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_MEDIA_1"]=""
 S["COND_MONOLITHIC_0_SHARED_1_USE_GUI_1_USE_HTML_1"]=""
 S["COND_MONOLITHIC_0_SHARED_1_USE_GUI_1"]=""
 S["COND_MONOLITHIC_0_SHARED_1_USE_AUI_1"]=""
@@ -864,7 +865,7 @@ S["ICC_PCH"]="0"
 S["GCC_PCH"]="0"
 S["OBJCXXFLAGS"]="-pthread -O2 -Wno-deprecated-declarations -fvisibility=hidden -fvisibility-inlines-hidden"
 S["WINDRES"]=""
-S["BK_DEPS"]="/home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/bk-deps"
+S["BK_DEPS"]="/home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build/bk-deps"
 S["DEPS_TRACKING"]="1"
 S["SONAME_FLAG"]="-Wl,-soname,"
 S["USE_SOTWOSYMLINKS"]="1"
@@ -926,7 +927,7 @@ S["EXTRALIBS_OPENGL"]=""
 S["EXTRALIBS_GUI"]="-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lgthread-2.0 -pt"\
 "hread -lglib-2.0 -lX11 -lSM -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lg"\
 "object-2.0 -lglib-2.0 -lXtst -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lfontconfig -lfreetype -lpng -lz"
-S["EXTRALIBS_MEDIA"]=""
+S["EXTRALIBS_MEDIA"]="-lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0"
 S["EXTRALIBS_HTML"]=""
 S["EXTRALIBS_XML"]=" -lexpat"
 S["EXTRALIBS"]="-pthread   -Wl,--version-script,$(wx_top_builddir)/version-script -lz -ldl -lm "
@@ -946,8 +947,9 @@ S["wxUSE_ZLIB"]="sys"
 S["STD_GUI_LIBS"]="xrc html qa adv core"
 S["STD_BASE_LIBS"]="xml net base"
 S["BUILT_WX_LIBS"]="xrc stc richtext ribbon propgrid aui html qa adv core xml net base"
-S["GST_LIBS"]=""
-S["GST_CFLAGS"]=""
+S["GST_LIBS"]="-lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0"
+S["GST_CFLAGS"]="-pthread -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2"\
+".0/include"
 S["CAIRO_LIBS"]="-lcairo"
 S["CAIRO_CFLAGS"]="-I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include"\
 "/freetype2 -I/usr/include/libpng16"
@@ -1039,7 +1041,7 @@ S["CPPFLAGS"]=""
 S["LDFLAGS"]=""
 S["CFLAGS"]=""
 S["CC"]="gcc"
-S["wx_top_builddir"]="/home/pirogov/PIDB/source/gui/wxWidgets-3.1.5/gtk-build"
+S["wx_top_builddir"]="/home/alex/Desktop/PIDB/source/gui/wxWidgets-3.1.5/gtk-build"
 S["host_os"]="linux-gnu"
 S["host_vendor"]="pc"
 S["host_cpu"]="x86_64"
@@ -1477,6 +1479,8 @@ D["wxUSE_WIZARDDLG"]=" 1"
 D["HAVE_CAIRO_PUSH_GROUP"]=" 1"
 D["wxUSE_CAIRO"]=" 1"
 D["wxUSE_GRAPHICS_CONTEXT"]=" 1"
+D["wxUSE_GSTREAMER"]=" 1"
+D["wxUSE_MEDIACTRL"]=" 1"
 D["wxINSTALL_PREFIX"]=" \"/usr/local\""
   for (key in D) D_is_set[key] = 1
   FS = ""

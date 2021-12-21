@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread  -rdynamic CMakeFiles/FileHandler.dir/home/alex/Desktop/PIDB/source/FileHandlerPI/FileHandler.cpp.o CMakeFiles/FileHandler.dir/home/alex/Desktop/PIDB/source/FileHandlerPI/main.cpp.o  -o FileHandler   -L/usr/local/lib  -L/home/alex/Desktop/PIDB/source/gui/src/../../FileHandlerPI 
