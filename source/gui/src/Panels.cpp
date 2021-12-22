@@ -100,11 +100,13 @@ RightPanel::RightPanel(wxPanel * parent)
     m_exec_query = new wxButton(this, 1006, wxT("ВЫПОЛНИТЬ"), wxPoint(20, 550),
             wxDefaultSize);
 
-    m_text_input = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxPoint(20, 20),
-            wxSize(580,500), wxTE_MULTILINE);
-      m_text_output = new wxStaticText(this, -1, wxT("rbpanel"), wxPoint(20, 550),
-              wxSize(580, 500));
+    m_text_input = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxPoint(20, 50),
+            wxSize(580,450), wxTE_MULTILINE);
+      m_text_output = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxPoint(20, 750),
+              wxSize(580, 200));
 
+   input_invite_text = new wxStaticText(this, wxID_ANY, wxT("Введите ваш запрос ниже"), wxPoint(10, 10), wxDefaultSize, wxALIGN_LEFT);
+   query_result_text = new wxStaticText(this, wxID_ANY, wxT("Результат запроса"), wxPoint(10,700),wxDefaultSize, wxALIGN_LEFT);
 }
 
 void RightPanel::executeInputedQuery()
@@ -114,29 +116,41 @@ void RightPanel::executeInputedQuery()
     m_rightTableResult = ((Communicate *)m_parent->GetParent())->m_rbp->m_text;
 
     std::string query(m_text_input->GetValue().mb_str());
-    std::cout << query << "INputer qyue\n";
+
     Compiler* comp = ((Communicate *)m_parent->GetParent())->comp;
     Parser* parser = new SyntaxParser(query);
     FileHandler* fh = ((Communicate *)m_parent->GetParent())->fh;
     ExecuteMachine* me = ((Communicate *)m_parent->GetParent())->mc;
  
     comp->setQuery(query);
-    parser->setQuery(query);
-    
+
+      
     Tree* selectTree = new SelectTree(query);
     comp->compile(parser, selectTree);
+    std::cout << "COMPILE STATUS" << comp->get_compile_status() << '\n';
     std::map<std::string, std::string> plan = comp->get_plan();
-    me->execute(plan, fh);
 
-    m_rightTableResult->Clear();
-    m_rightTableResult->Refresh();
-
-    m_rightTableResult->ChangeValue(me->getTableResult());
-
-  
- 
+    if(comp->get_compile_status() == 0)
+    {
+       me->execute(plan, fh);
+       if(fh->get_read_status() == 0)
+       {
+         m_rightTableResult->Clear();
+         m_rightTableResult->Refresh();
+         
+         m_rightTableResult->ChangeValue(me->getTableResult());
+         m_text_output->Clear();
+       } else {
+         wxString err(wxT("ДАННОЙ ТАБЛИЦЫ НЕ СУЩЕСТВУЕТ"));
+         m_text_output->ChangeValue(err);
+       }
+   } else {
+       wxString err(wxT("ОШИБКА ЗАПРОСА"));
+       m_text_output->ChangeValue(err);
+    }
+    m_text_output->Refresh();
     delete parser;
- 
+    delete selectTree;
 };
 
 

@@ -17,5 +17,7 @@ class Parser
    protected:
 	int parse_status;
 	std::string query;
+    
+    virtual void checkQuery(std::map<std::string, std::string>& plan) = 0;
    private:
 };

@@ -12,6 +12,6 @@ class SyntaxParser : public Parser
 	   SyntaxParser(std::string& query);
 	   void parse(Tree* tree, std::map<std::string, std::string>& plan);
    protected:
-	   std::map<std::string, std::string> plan;
+       void checkQuery(std::map<std::string, std::string>& plan);	 
    private:
 };

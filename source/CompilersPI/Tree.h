@@ -26,8 +26,10 @@ class Tree
        Node* current = nullptr;
  
        std::vector<std::string> splittedWords;
+
        void setLeft(Node* parent, Node* left);
        void setRight(Node* parent, Node* right);
        virtual void createTree(std::string& selectQuery) = 0;
+
    private:
 };

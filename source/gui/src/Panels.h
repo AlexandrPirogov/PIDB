@@ -21,13 +21,15 @@ class RightPanel : public wxPanel
    public:
        wxTextCtrl* m_rightTableResult;
 
+       wxStaticText *input_invite_text;
+       wxStaticText *query_result_text;
        RightPanel(wxPanel *parent);
 
        void OnSetText(wxCommandEvent & event);
 
        wxButton *m_exec_query;
        wxTextCtrl *m_text_input;
-       wxStaticText *m_text_output;
+       wxTextCtrl *m_text_output;
       
        void executeInputedQuery();
 };

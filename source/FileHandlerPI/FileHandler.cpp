@@ -39,7 +39,7 @@ void FileHandler::read(std::string& path, std::string& filename)
 	   };
 	   this->read_status = READ_STATUS_OK;
 	} else {
-	    std::cout << "Таблицы  " << filename << " не существует!\n";
+
             this->read_status = READ_STATUS_ERR;
 	}
 };

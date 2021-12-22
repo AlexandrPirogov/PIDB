@@ -23,6 +23,7 @@ void Compiler::setQuery(std::string& query)
 void Compiler::compile(Parser* parser, Tree* tree)
 {
    parser->parse(tree, this->plan);
+   this->compile_status = parser->get_parse_status();
 };
 
 int Compiler::get_compile_status()

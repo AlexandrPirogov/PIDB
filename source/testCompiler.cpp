@@ -26,7 +26,7 @@ int main()
       Compiler* comp = new Compiler(st);  
      
       comp->compile(sp, selectTree);
-      
+      std::cout << "status: " <<comp->get_compile_status() << '\n';
       std::map<std::string, std::string> plan = comp->get_plan(); 
       for(auto& [key, value] : comp->get_plan())
 	     std::cout << key << " = " << value << std::endl; 
