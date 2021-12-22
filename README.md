@@ -12,7 +12,7 @@ PIDB имеет следующий графический интерфейс:
 
 ![success](./images/success_query.png)
 ![err](./images/err_query.png)
-![err](./images/err_table.png)
+![err_table](./images/err_table.png)
 --------------------
 
 # Принципы работы компилятора
